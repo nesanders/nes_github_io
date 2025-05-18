@@ -2,6 +2,11 @@
 
 source "https://rubygems.org"
 
+# NES added
+#gem "io-event"
+#gem "bigdecimal"
+# /NES added
+
 gem "jekyll-theme-chirpy", "~> 7.2", ">= 7.2.4"
 
 gem "html-proofer", "~> 5.0", group: :test

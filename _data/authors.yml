@@ -1,0 +1,35 @@
+nes:
+  name: Nathan E. Sanders
+  # twitter: test
+  # TODO fix this to use e.g. {{ 'bio/' | relative_url }}
+  url: ../../bio/
+
+bruce:
+  name: Bruce Schneier
+  # twitter: test
+  url: https://www.schneier.com
+
+jaf:
+  name: James Alan Fox
+  url: https://cssh.northeastern.edu/faculty/james-fox/
+
+etal:
+  name: et al.
+
+roseh:
+  name: Rose Hendricks
+  url: https://civicsciencefellows.org/fellows/rose-hendricks/
+
+henryf:
+  name: Henry Farrell
+  url: https://henryfarrell.net
+
+eisen:
+  name: Norm Eisen
+  url: https://www.brookings.edu/people/norman-eisen/
+
+egong:
+  name: Eric Gong
+
+aberger:
+  name: Aaron Berger
