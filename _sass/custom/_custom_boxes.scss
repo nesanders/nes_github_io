@@ -1,0 +1,126 @@
+$org-list-gap: 2rem; // Gap between organization boxes
+$org-box-padding: 1.5rem;
+$org-box-border-radius: 8px;
+$org-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+$org-box-hover-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+
+$org-logo-max-width: 100px; // Max width for the logo image
+$org-logo-max-height: 80px; // Max height for the logo image
+$org-logo-content-gap: 1.5rem; // Gap between logo and text content
+
+// --- Main container for all organization entries ---
+.organization-list-container {
+  display: flex;
+  flex-direction: column; // **CRITICAL: Ensures each org is on a new row**
+  gap: $org-list-gap;     // Space between each organization's box
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0; // Reset any theme defaults
+  list-style: none; // Reset any theme defaults
+}
+
+// --- Wrapper for each organization's entry ---
+// This ensures each box can be constrained in width if desired on very large screens,
+// while still being part of the single-column layout.
+.org-box-wrapper {
+  width: 100%;
+  max-width: 800px; // Optional: constrain max width of content area. Adjust as needed.
+  margin-left: auto;  // Center the wrapper if max-width is applied
+  margin-right: auto; // Center the wrapper if max-width is applied
+  display: flex; // Added so the anchor/div inside can take full height if needed for consistent bg
+}
+
+// --- The actual styled card for a single organization ---
+// This element (div or a) MUST contain the logo and content.
+.org-box {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border-color, #e0e0e0); // Use theme variable or fallback
+  border-radius: $org-box-border-radius;
+  box-shadow: $org-box-shadow;
+  padding: $org-box-padding;
+  color: var(--text-color);
+  text-decoration: none; // For anchor tags
+
+  width: 100%; // Take full width of its wrapper
+  box-sizing: border-box; // Ensures padding & border are included in width/height calculation
+
+  // **CRITICAL: Flex layout for logo (left) and content (right)**
+  display: flex;
+  flex-direction: row; // Default for larger screens
+  align-items: flex-start; // Align items to the top. Use 'center' for vertical centering.
+  gap: $org-logo-content-gap; // Space between logo container and content block
+
+  transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
+
+  &:hover {
+    box-shadow: $org-box-hover-shadow;
+    transform: translateY(-2px);
+  }
+}
+
+// --- Container for the logo image ---
+.org-box-logo-container {
+  flex-shrink: 0; // Prevents logo container from shrinking
+  // No fixed width needed; image max-width will control it.
+  // Add display:flex here if you need to center a smaller logo within a fixed-size logo container.
+}
+
+// --- The logo image itself ---
+.org-box-logo {
+  display: block; // Good practice for images
+  max-width: $org-logo-max-width;
+  max-height: $org-logo-max-height;
+  object-fit: contain; // Scales image while maintaining aspect ratio
+  border-radius: 4px;  // Optional: slight rounding for the image itself
+}
+
+// --- Container for all textual content (name, role, description) ---
+.org-box-content {
+  flex-grow: 1;     // Allows this block to take up remaining space
+  text-align: left; // Default text alignment
+  min-width: 0; // Fix for potential flexbox overflow with long text
+}
+
+.org-box-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin: 0 0 0.3rem 0;
+}
+
+.org-box-role {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-muted-color);
+  margin: 0 0 0.6rem 0;
+  line-height: 1.4;
+}
+
+.org-box-description {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+}
+
+// --- Responsive Adjustments for smaller screens ---
+@media (max-width: 600px) { // Breakpoint for stacking
+  .org-box {
+    flex-direction: column; // Stack logo and content vertically
+    align-items: center;    // Center items in the column
+    text-align: center;     // Center text for all content within the box
+  }
+
+  .org-box-logo-container {
+    margin-bottom: $org-logo-content-gap * 0.75; // Space below logo when stacked
+  }
+
+  .org-box-content {
+    text-align: center; // Ensure text content is centered
+    width: 100%; // Ensure it takes full width in stacked mode
+  }
+
+  .org-box-name {
+    font-size: 1.15rem;
+  }
+}

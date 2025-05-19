@@ -1,0 +1,41 @@
+{% comment %}
+  Reusable organization display box.
+  Expects a single 'item' object with:
+  - item.name (string, required)
+  - item.logo (string, path to logo, required)
+  - item.description (string, required)
+  - item.role (string, optional)
+  - item.url (string, optional, URL for the organization)
+{% endcomment %}
+
+{%- assign item = include.item -%}
+
+<div class="org-box-wrapper">
+  {% if item.url and item.url != "" %}
+  <a href="{{ item.url }}" class="org-box" target="_blank" rel="noopener noreferrer" title="Visit {{ item.name }}">
+    <div class="org-box-logo-container">
+      <img src="{{ item.logo | relative_url }}" alt="{{ item.name }} Logo" class="org-box-logo">
+    </div>
+    <div class="org-box-content">
+      <h3 class="org-box-name">{{ item.name }}</h3>
+      {% if item.role and item.role != "" %}
+        <p class="org-box-role">{{ item.role }}</p>
+      {% endif %}
+      <p class="org-box-description">{{ item.description | markdownify | strip_html }}</p>
+    </div>
+  </a>
+  {% else %}
+  <div class="org-box">
+    <div class="org-box-logo-container">
+      <img src="{{ item.logo | relative_url }}" alt="{{ item.name }} Logo" class="org-box-logo">
+    </div>
+    <div class="org-box-content">
+      <h3 class="org-box-name">{{ item.name }}</h3>
+      {% if item.role and item.role != "" %}
+        <p class="org-box-role">{{ item.role }}</p>
+      {% endif %}
+      <p class="org-box-description">{{ item.description | markdownify | strip_html }}</p>
+    </div>
+  </div>
+  {% endif %}
+</div>
