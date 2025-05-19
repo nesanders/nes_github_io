@@ -11,9 +11,9 @@ layout:
 tabs:
   # format: <filename_without_extension>: <value>
   home: Latest Updates
-  categories: Posts by Category
-  tags: Posts by Tag
-  archives: Posts by Date
+  categories: Posts | by Category
+  tags: Posts | by Tag
+  archives: Posts | by Date
   about: About
 
 # the text displayed in the search bar & search results

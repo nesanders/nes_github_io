@@ -4,7 +4,7 @@ date: 2025-04-03
 pin: false
 categories: [writing, article]
 tags: [democracy, ai, public ai, tech policy press, states]
-description:
+description: An article for Tech Policy Press making the case for US states as the best incubators for Public AI projects.
 authors: [nes, apascal]
 ---
 
