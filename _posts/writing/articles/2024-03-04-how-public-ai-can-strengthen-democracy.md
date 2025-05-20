@@ -1,7 +1,7 @@
 ---
 title: "How public AI can strengthen democracy."
 date: 2024-03-04
-pin: false
+pin: true
 categories: [writing, article]
 tags: [democracy, ai, public ai, brookings]
 description: An article for Brookings laying out the case for Public AI as a tool to strengthen democracy.
