@@ -37,3 +37,15 @@ aberger:
 apascal:
   name: Alex Pascal
   url: https://ash.harvard.edu/people/alexander-pascal/
+
+mav:
+  name: Michael A. Velbel
+  url: https://directory.natsci.msu.edu/Directory/Profiles/Person/101192
+
+ams:
+  name: Alicia M. Soderberg
+  url: https://baas.aas.org/pub/2025i006/release/1
+
+betanalpha:
+  name: Michael Betancourt
+  url: https://betanalpha.github.io
