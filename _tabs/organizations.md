@@ -43,3 +43,11 @@ ScienceBites is a collective of about 30 graduate student writing collaboratives
 *Co-founder and Co-director*
 
 The Climate Justice Design Fellowship (CJDF) was an initiative of the Institute for Quantitative Social Science at Harvard University that empowered leaders in climate justice from government and civil society around the US to use data, design, and technological tools to advance their work, their organizations, and their communities. In 2021, we funded seven fellows to design and build accessible data tools that helped them promote equity and justice in their communities.
+
+
+![AMEND logo](/assets/img/logos/amend.png){: .left width="150"}
+# [AMEND](https://openamend.org)
+
+*Founder and maintainer*
+
+The Archive of Massachusetts ENvironmental Data (AMEND) is a collection of environmental regulatory data and analysis focused on enhancing the use of evidence and accountability for water policy in Massachusetts. It was built to support advocacy efforts by local environmental organizations like the Mystic River Watershed Association.
