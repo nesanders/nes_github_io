@@ -78,7 +78,7 @@ Nathan E. Sanders is a data scientist focused on making policymaking more partic
   </li>
   <li><a 
   title="Books a Million"
-  href="http://www.booksamillion.com/search?query=9780262049948&where=All"
+  href="https://www.booksamillion.com/search?query=9780262049948&where=All"
   target="_blank">Books a Million</a>
   </li>
 </ul>

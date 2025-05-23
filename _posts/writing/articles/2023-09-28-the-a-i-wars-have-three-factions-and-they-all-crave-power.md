@@ -187,7 +187,7 @@ authors: [nes, bruce]
     Safiya Umoja Noble
   </a>
   ,&nbsp;
-  <a title="" href="http://www.rummanchowdhury.com/" target="_blank" rel="noopener noreferrer">
+  <a title="" href="https://www.rummanchowdhury.com/" target="_blank" rel="noopener noreferrer">
     Rumman Chowdhury
   </a>
   &nbsp;and&nbsp;

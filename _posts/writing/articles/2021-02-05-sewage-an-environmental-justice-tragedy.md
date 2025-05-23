@@ -32,7 +32,7 @@ description: A blog post for the Mystic River Watershed Association about sewage
 		vibrant recreational scene
 	</a>
 	, it also receives&nbsp;
-	<a tabindex="0" href="http://www.mwra.com/cso/annual-discharge-estimates/cy2018.pdf" target="_blank">
+	<a tabindex="0" href="https://www.mwra.com/cso/annual-discharge-estimates/cy2018.pdf" target="_blank">
 		more than 150 million gallons
 	</a>
 	&nbsp;of sewage annually.
@@ -60,7 +60,7 @@ description: A blog post for the Mystic River Watershed Association about sewage
 		a geospatial analysis
 	</a>
 	&nbsp;of data from 2011. It may be that the inequity of sewage discharges has improved over the past decade. There has certainly been&nbsp;
-	<a tabindex="0" href="http://www.mwra.com/03sewer/html/sewcso.htm" target="_blank">
+	<a tabindex="0" href="https://www.mwra.com/03sewer/html/sewcso.htm" target="_blank">
 		significant progress made
 	</a>
 	&nbsp;via court-ordered infrastructure improvements during that time by the Massachusetts Water Resources Authority, the City of Cambridge, and others. Yet in the absence of a standardized reporting requirement, researchers cannot access more recent data to assess progress on equity measures.

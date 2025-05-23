@@ -365,7 +365,7 @@ authors: [nes, bruce]
     cigarettes
   </a>
   , and just as many other jurisdictions&nbsp;
-  <a href="www.law-democracy.org/wp-content/uploads/2012/03/Elections-and-Broadcasting-Final.pdf" target="_blank">
+  <a href="https://www.law-democracy.org/wp-content/uploads/2012/03/Elections-and-Broadcasting-Final.pdf" target="_blank">
     exercise
   </a>
   &nbsp;strict control over the time and manner of politically sensitive advertising, so too could the US limit the engagement between AI providers and advertisers.

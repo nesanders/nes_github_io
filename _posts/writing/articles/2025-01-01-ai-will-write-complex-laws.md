@@ -43,7 +43,7 @@ authors: [nes, bruce]
 </p>
 <p>
   Several years ago,&nbsp;
-  <a href="http://dx.doi.org/10.1177/1532673X18776628" data-sf-ec-immutable="">
+  <a href="https://dx.doi.org/10.1177/1532673X18776628" data-sf-ec-immutable="">
     researchers studied bills
   </a>
   &nbsp;introduced into state legislatures throughout the U.S., looking at which bills were wholly original texts and which borrowed text from other states or from lobbyist-written model legislation. Their conclusion was not very surprising. Those who borrowed the most text were in legislatures that were less resourced. This makes sense: If you&rsquo;re a part-time legislator, perhaps unpaid and without a lot of staff, you need to rely on more external support to draft legislation. When the scope of policymaking outstrips the resources of legislators, they look for help. Today, that often means lobbyists, who provide expertise, research services, and drafting labor to legislators at the local, state, and federal levels at no charge. Of course, they are not unbiased: They seek to exert influence on behalf of their clients.

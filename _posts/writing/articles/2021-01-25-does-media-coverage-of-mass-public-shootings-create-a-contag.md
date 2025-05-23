@@ -10,4 +10,4 @@ description: A short review article for Significance Magazine about the contagio
 
 *This article was written with James Alan Fox and others and originally published at [Significance Magazine](https://doi.org/10.1111/1740-9713.01610) on 2021-01-25.*
 
-[The publisher's PDF version is available here.]({{ "assets/sign_19_1_24.pdf" | relative_url }})
+[The publisher's PDF version is available here.]({{ "assets/papers/sign_19_1_24.pdf" | relative_url }})
