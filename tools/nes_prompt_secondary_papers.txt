@@ -1,0 +1,230 @@
+I am going to give you a list of papers from a latex file and you will generate some bash scripts to create a markdown page for each one and to download arxiv pdfs to host alongside them on a jekyll site.
+
+Outputs:
+1. Bash script to generate markdown files and download arxiv PDFs to a local directory.
+2. A list of author yml statements
+
+Requirements:
+* Make sure each and every paper gets a markdown file, even if it has blanks because you couldn't find some information.
+* Make the bash script short and simple. It should include 1) a string template for the markdown file and 2) a variable array of the data to be entered in the template, and then a for loop to iterate over each paper.
+* Don't change the categories: keep it as [research, paper]
+* Don't assign more than 4 tags and reused the provided ones whenever possible and appropriate.
+* `pin` will always be false
+* Make sure the title matches the publisher's version
+* Use web search to find the publisher's and arxiv URL. Not all papers will be on arxiv, but almost all will.
+* You are responsible for finding the correct publication date (year, month, day) from the publisher's website.
+* Don't make up any links. You are responsible for checking each link to make sure it represents the requested article and is not hallucinated.
+* Generate a yml of author names for authors that appear higher than N. Sanders using the format below. Reference the name you assign in the yml in the markdown file for the associated papers. You can leave the URL blank for the author and I will fill it in. Reuse the author names already defined.
+* Don't list more than 4 authors total in the markdown, but use ellipses if there are more than two authors above N. Sanders in the author list.
+
+
+Markdown format:
+```
+---
+title: "Towards Characterization of the Type IIP Supernova Progenitor Population: a Statistical Sample of Light Curves from Pan-STARRS1"
+date: 2015-02-10
+pin: false
+categories: [research, paper]
+tags: ["astrophysics", "statistics", "supernovae"]
+description: "Aims to characterize Type IIP supernova progenitors by analyzing a statistical sample of light curves obtained from the Pan-STARRS1 survey."
+authors: ["nes", "ams", "etal"]
+---
+
+*This paper was originally published in The Astrophysical Journal in 2015.*
+
+A PDF of the paper is available [here]({{"/assets/papers/2015-type_iip_supernova_progenitors.pdf" | relative_url }}).
+
+**Full Citation (AAS Style):**
+Sanders, N. E., Soderberg, A. M., Gezari, S., et al. 2015, ApJ, 799, 208, doi:10.1088/0004-637X/799/2/208
+
+**Links:**
+- [Publisher's Version](https://iopscience.iop.org/article/10.1088/0004-637X/799/2/208) (DOI: [10.1088/0004-637X/799/2/208](https://doi.org/10.1088/0004-637X/799/2/208))
+- [arXiv Version](https://arxiv.org/abs/1404.2004)
+
+```
+
+
+Latex article list:
+
+```
+
+%CV \item \textit{Applications of Artificial Intelligence Tools to Enhance Legislative Engagement: Case Studies from Make.org and MAPLE}
+%CV  \\  Combaz, A.; ...; \textbf{Sanders, N.}; et al.; 2024, \href{https://www.ie.edu/cgc/research/ai4democracy/}{AI4Democracy, IE Center for the Governance of Change}.
+
+%CV \item \textit{ComboPath: An ML system for predicting drug combination effects with superior model specification}
+%CV  \\  Ranasinghe, D.; \textbf{Sanders, N.}; et al.; 2023, NeurIPS AI4Science, \href{https://www.biorxiv.org/content/10.1101/2024.01.16.575408v1}{bioRxiv:2024.01.16.575408}.
+
+%CV \item \textit{Estimating the Global Prevalence of Mass Public Shootings}
+%CV  \\  Duwe, Grant; \textbf{Sanders, N.}; et al.; 2022, International Journal of Offender Therapy and Comparative Criminology, 0(0)
+
+%CV \item \textit{Does media coverage of mass public shootings create a contagion effect?}
+%CV  \\  Fox, James A.; \textbf{Sanders, N.}; et al.; 2022, Significance Magazine, 19, 1.
+
+%CV \item \textit{The Contagion of Mass Shootings: The Interdependence of Large-Scale Massacres and Mass Media Coverage.}
+%CV  \\  Fox, James A.; \textbf{Sanders, N.}; et al.; 2021, SPP, DOI:10.1080/2330443X.2021.1932645.
+
+%CV \item \textit{Forecasting the Severity of Mass Public Shootings in the United States}
+%CV  \\  Duwe, Grant; \textbf{Sanders, N.}; et al.; 2021, Journal of Quantitative Criminology, 1-39.
+
+%CV \item \textit{SuperRAENN: A Semi-supervised Supernova Photometric Classification Pipeline Trained on Pan-STARRS1 Medium Deep Survey Supernovae.}
+%CV  \\  Villar, V. A.; ...; \textbf{Sanders, N.}; et al.; 2020, ApJ, 905.2,  94, arXiv:2008.04921.
+
+%CV \item \textit{Supernova Photometric Classification Pipelines Trained on Spectroscopically Classified Supernovae from the Pan-STARRS1 Medium-Deep Survey}
+%CV  \\  Villar, V. A.; ...; \textbf{Sanders, N.}; 2019, ApJ, 884, 83, arXiv:1905.07422.
+
+% % % %CV \item \textit{Geocoding Without Geotags: A Text-based Approach for reddit} % Did not end up including co-authors
+% % % %CV \\  Harrigian, K.; ...; \textbf{Sanders, N.}; 2018, arXiv:1810.03067.
+
+%CV \item \textit{Clust-LDA: Joint Model for Text Mining and Author Group Inference}
+%CV \\  Ning, S.; ...; \textbf{Sanders, N.}; 2018, arXiv:1810.02717.
+
+%CV \item \textit{Advertising Attribution Modeling in the Movie Industry.}
+%CV \\  Lei, V.; \textbf{Sanders, N.}; Dawson, A.; StanCon 2017 Proceedings.
+
+%CV\item \textit{iPTF15eqv: Multi-wavelength Expose of Calcium Rich Transients}
+%CV\\ Milisavljevic, D.; ...; \textbf{Sanders, N.}; ...; 2017, ApJ, 846, 1, arXiv:1706.01887
+
+%CV\item \textit{The Broad-lined SN\,Ic 2012ap and the Nature of Relativistic Supernovae Lacking a GRB Detection}
+%CV\\ Milisavljevic, D.; ...; \textbf{Sanders, N.}; ...; 2015, ApJ, 799, 1, arXiv:1408.1606.
+
+%CV\item \textit{Relativistic SNe have Shorter-lived Central Engines or More Extended Progenitors: The Case of SN\,2012ap}
+%CV\\ Margutti, R.; ...; \textbf{Sanders, N.}; ...; 2014, ApJ, 797, 2, arXiv:1402.6344.
+
+%CV\item \textit{Rapidly Evolving and Luminous Transients from Pan-STARRS1}
+%CV\\ Drout, M.; Chornock, R.; Soderberg, A.; \textbf{Sanders, N.}; ...; 2014, ApJ, 794, 1, arXiv:1405.3668.
+
+%CV\item \textit{Interaction between the Broad-lined Type Ic SN\,2012ap and Carriers of Diffuse Interstellar Bands}
+%CV\\ Milisavljevic, D.; ...; \textbf{Sanders, N.}; ...; 2014, ApJ, 782, 1, arXiv:1401.2991.
+
+%CV\item \textit{A Panchromatic View of the Restless SN\,2009ip Reveals Explosive Ejection of a Massive Star Envelope}
+%CV\\ Margutti, R.; ...; \textbf{Sanders, N.}; ...; 2014, ApJ, 780, 1, arXiv:1306.0038.
+
+%CV\item \textit{SN 2012au: A Golden Link between Superluminous SNe and Their Lower-luminosity Counterparts}
+%CV\\ Milisavljevic, D.; ...; \textbf{Sanders, N.}; ...; 2015, ApJ, 770, 2, arXiv:1304.0095.
+
+%CV\item \textit{Multi-wavelength Observations of Supernova 2011ei...}
+%CV\\ Milisavljevic, D.; ...; \textbf{Sanders, N.}; ...; 2013, ApJ, 767, 1, arXiv:1207.2152.
+
+%CV\item \textit{Velocity Evolution and the Intrinsic Color of Type Ia Supernovae}
+%CV\\ Foley, R.; \textbf{Sanders, N.}; Kirshner, R. 2011, ApJ, 742, 89, arXiv:1107.3555.
+```
+
+Author yml:
+```
+nes:
+  name: Nathan E. Sanders
+  url: ../../bio/
+
+bruce:
+  name: Bruce Schneier
+  # twitter: test
+  url: https://www.schneier.com
+
+jaf:
+  name: James Alan Fox
+  url: https://cssh.northeastern.edu/faculty/james-fox/
+
+etal:
+  name: et al.
+
+roseh:
+  name: Rose Hendricks
+  url: https://civicsciencefellows.org/fellows/rose-hendricks/
+
+henryf:
+  name: Henry Farrell
+  url: https://henryfarrell.net
+
+eisen:
+  name: Norm Eisen
+  url: https://www.brookings.edu/people/norman-eisen/
+
+egong:
+  name: Eric Gong
+
+aberger:
+  name: Aaron Berger
+
+apascal:
+  name: Alex Pascal
+  url: https://ash.harvard.edu/people/alexander-pascal/
+
+mav:
+  name: Michael A. Velbel
+  url: https://directory.natsci.msu.edu/Directory/Profiles/Person/101192
+
+ams:
+  name: Alicia M. Soderberg
+  url: https://baas.aas.org/pub/2025i006/release/1
+
+betanalpha:
+  name: Michael Betancourt
+  url: https://betanalpha.github.io
+```
+
+Tag list (please ignore the trailing integer):
+```
+academia1
+addgene1
+agentic1
+ai29
+american prospect1
+ash center2
+astrobites3
+astrophysics12
+belfer1
+boston review1
+brookings1
+chatgpt1
+climate1
+comscicon2
+democracy23
+doge1
+education4
+elections4
+environment2
+environmental justice1
+fcc1
+fec1
+finance1
+foreign policy1
+ftc1
+galaxies1
+gizmodo1
+gradhacker2
+ieee spectrum1
+jacobin1
+law1
+lawfare1
+legislation1
+legislative engagement1
+lobbying1
+mass public shootings3
+meteoritics1
+mistakes1
+myrwa1
+physics today1
+politics1
+polling2
+power1
+public ai4
+public safety1
+regulation3
+research1
+science communication6
+scientific american1
+sec1
+sewage1
+significance1
+slate1
+social media1
+states1
+statistics8
+supernovae5
+tech policy press1
+technology review3
+the atlantic3
+the new york times2
+trust3
+wired2
+```

@@ -1,7 +1,5 @@
 nes:
   name: Nathan E. Sanders
-  # twitter: test
-  # TODO fix this to use e.g. {{ 'bio/' | relative_url }}
   url: ../../bio/
 
 bruce:
@@ -49,3 +47,65 @@ ams:
 betanalpha:
   name: Michael Betancourt
   url: https://betanalpha.github.io
+
+adawson:
+  name: Abi Dawson
+
+acombaz:
+  name: Alicia Combaz
+dmas:
+  name: David Mas
+dsranasinghe:
+  name: Duminda S. Ranasinghe
+  url: https://scholar.google.com/citations?user=pMikAokAAAAJ&hl=en
+gduwe:
+  name: Grant Duwe
+vavillar:
+  name: V. Ashley Villar
+  url: https://astronomy.fas.harvard.edu/people/ashley-villar
+ghosseinzadeh:
+  name: Griffin Hosseinzadeh
+sning:
+  name: Shaoyang Ning
+  url: https://sites.google.com/view/shaoyangning
+vlei:
+  name: Victor Lei
+  url: https://sites.google.com/view/shaoyangning
+dmilisav:
+  name: Dan Milisavljevic
+  url: https://www.danmil.space/about
+rmargutti:
+  name: Raffaella Margutti
+  url: https://astro.berkeley.edu/people/raffaella-margutti
+jtparrent:
+  name: Jerod T. Parrent
+rchornock:
+  name: Ryan Chornock
+  url: https://astro.berkeley.edu/people/ryan-chornock
+kdalexander:
+  name: Kate D. Alexander
+  url: https://ciera.northwestern.edu/directory/kate-alexander/
+eberger:
+  name: Edo Berger
+  url: https://scholar.harvard.edu/eberger/home
+mdrout:
+  name: Maria R. Drout
+  url: https://www.astro.utoronto.ca/~drout/
+rpk:
+  name: Robert P. Kirshner
+  url: https://astronomy.fas.harvard.edu/people/robert-p-kirshner
+ghmarion:
+  name: G. H. Marion
+jcwheeler:
+  name: J. C. Wheeler
+rjfoley:
+  name: Ryan J. Foley
+  url: https://www.astro.ucsc.edu/faculty/index.php?uid=foley
+bzauderer:
+  name: B. Ashley Zauderer
+  url: https://www.linkedin.com/in/bevin-ashley-zauderer-4b800042
+dotdotdot:
+  name: "..."
+mvictor:
+  name: Matt Victor
+  url: https://www.bernsteinshur.com/who/attorney-directory/matthew-victor/

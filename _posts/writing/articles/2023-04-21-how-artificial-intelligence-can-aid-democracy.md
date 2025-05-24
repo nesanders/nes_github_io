@@ -80,7 +80,7 @@ authors: [bruce, henryf, nes]
 </p>
 <p>
 	Finally, and most ambitiously, A.I. could help facilitate radical democracy at scale. As Carnegie Mellon professor of statistics Cosma Shalizi has
-	<a href="http://bactra.org/notebooks/democracy.html">
+	<a href="https://bactra.org/notebooks/democracy.html">
 		 observed
 	</a>
 	 , we delegate decisions to elected politicians in part because we don&rsquo;t have time to deliberate on every issue. But A.I. could manage massive political conversations in chat rooms, on social networking sites, and elsewhere: identifying common positions and summarizing them, surfacing unusual arguments that seem compelling to those who have heard them, and keeping attacks and insults to a minimum.
